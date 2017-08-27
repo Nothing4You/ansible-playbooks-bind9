@@ -8,8 +8,8 @@
     register: output
     changed_when: output.stdout != ""
 
-#- hosts: bind-master
-#  vars:
-#    colo: idc2
-#  roles:
-#  - bind
+- hosts: bind-master
+  vars:
+    colo: dnscfg
+  roles:
+  - bind
